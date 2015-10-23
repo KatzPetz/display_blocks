@@ -12,7 +12,7 @@ local Scale = 0.9
 function disp(base, name, light, rec, rp)
 	minetest.register_node( "display_blocks:"..base.."_base", {
 		description = name.."Display Base",
-		tile_images = { "display_blocks_"..base.."_block.png" },
+		tiles = { "display_blocks_"..base.."_block.png" },
 		is_ground_content = true,
 		groups = {cracky=3,},
 		light_source = light,
@@ -24,7 +24,7 @@ function disp(base, name, light, rec, rp)
 	minetest.register_node( "display_blocks:"..base.."_crystal", {
 		drawtype = "plantlike",
 		description = name.." Display Crystal",
-		tile_images = { "display_blocks_"..base.."_crystal.png" },
+		tiles = { "display_blocks_"..base.."_crystal.png" },
 		is_ground_content = true,
 		paramtype = "light",
 		visual_scale = Scale,
@@ -92,7 +92,7 @@ end
 
 minetest.register_node( "display_blocks:universia_base", {
 	description = "Universia Display Base",
-	tile_images = {"display_blocks_universia_block.png"},
+	tiles = {"display_blocks_universia_block.png"},
 	is_ground_content = true,
 	groups = {cracky=3,},
 	light_source = 15,
@@ -104,7 +104,7 @@ minetest.register_node( "display_blocks:universia_base", {
 minetest.register_node( "display_blocks:universia_crystal", {
 	description = "Universia Display Crystal",
 	drawtype = "plantlike",
-	tile_images = {"display_blocks_universia_crystal.png"},
+	tiles = {"display_blocks_universia_crystal.png"},
 	selection_box = {
 		type = "fixed",
 		fixed = { -0.15, -0.5, -0.15, 0.15, 0.2, 0.15 },
@@ -151,7 +151,7 @@ minetest.register_craft({
 
 minetest.register_node("display_blocks:compressed_earth", {
 	description = "Compressed Earth",
-	tile_images = {"display_blocks_compressed_earth.png"},
+	tiles = {"display_blocks_compressed_earth.png"},
 	groups = {crumbly=3,soil=1},
 	sounds = default.node_sound_dirt_defaults({
 		footstep = {name="default_grass_footstep", gain=0.25},
@@ -160,7 +160,7 @@ minetest.register_node("display_blocks:compressed_earth", {
 
 minetest.register_node("display_blocks:empty_display", {
 	description = "Empty Display",
-	tile_images = {"display_blocks_empty_display.png"},
+	tiles = {"display_blocks_empty_display.png"},
 	groups = {cracky=3,oddly_breakable_by_hand=3},
 	sounds = default.node_sound_glass_defaults(),
 	sunlight_propagates = true,
@@ -171,7 +171,7 @@ minetest.register_node("display_blocks:empty_display", {
 
 minetest.register_node("display_blocks:industria_cube", {
 	description = "Industria Cube",
-	tile_images = {"display_blocks_industria_cube.png"},
+	tiles = {"display_blocks_industria_cube.png"},
 	groups = {cracky=3,oddly_breakable_by_hand=3},
 	sounds = default.node_sound_glass_defaults(),
 	sunlight_propagates = true,
@@ -182,7 +182,7 @@ minetest.register_node("display_blocks:industria_cube", {
 
 minetest.register_node("display_blocks:natura_cube", {
 	description = "Natura Cube",
-	tile_images = {"display_blocks_natura_cube.png"},
+	tiles = {"display_blocks_natura_cube.png"},
 	groups = {cracky=3,oddly_breakable_by_hand=3},
 	sounds = default.node_sound_glass_defaults(),
 	sunlight_propagates = true,

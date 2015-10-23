@@ -1,6 +1,6 @@
 minetest.register_node( "display_blocks:uranium_ore", {
 	description = "Uranium Ore",
-	tile_images = { "default_stone.png^uranium_ore.png" },
+	tiles = { "default_stone.png^uranium_ore.png" },
 	is_ground_content = true,
 	groups = {cracky=3},
 	drop = 'craft "display_blocks:uranium_dust" 3',
@@ -14,7 +14,7 @@ minetest.register_craftitem( "display_blocks:uranium_dust", {
 
 minetest.register_node( "display_blocks:uranium_block", {
 	description = "Uranium Block",
-	tile_images = { "uranium_block.png" },
+	tiles = { "uranium_block.png" },
 	light_propagates = true,
 	paramtype = "light",
 	sunlight_propagates = true,
