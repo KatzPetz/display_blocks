@@ -238,8 +238,8 @@ minetest.register_ore({
 	clust_scarcity = 25*25*25,
 	clust_num_ores = 20,
 	clust_size     = 5,
-	height_max     = -5,
-	height_min     = -15,
+	y_max     = -5,
+	y_min     = -15,
 })
 
 minetest.register_ore({
@@ -249,8 +249,8 @@ minetest.register_ore({
 	clust_scarcity = 20*20*20,
 	clust_num_ores = 50,
 	clust_size     = 5,
-	height_max     = -16,
-	height_min     = -29,
+	y_max     = -16,
+	y_min     = -29,
 })
 
 minetest.register_ore({
@@ -260,8 +260,8 @@ minetest.register_ore({
 	clust_scarcity = 15*15*15,
 	clust_num_ores = 80,
 	clust_size     = 5,
-	height_max     = -30,
-	height_min     = -100,
+	y_max     = -30,
+	y_min     = -100,
 })
 
 print("[Display Blocks] Loaded! by jojoa1997 :-)")
